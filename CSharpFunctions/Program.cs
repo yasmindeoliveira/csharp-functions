@@ -1,5 +1,4 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
 
 //In questo esercizio vi chiedo di definire qualche funzione di utilità che poi potete usare per poter fare operazioni complesse nei vostri programmi principali.
 //void StampaArrayInteri(int[] array): che preso un array di numeri interi, stampa a video il contenuto dell’array in questa forma “[elemento 1, elemento 2, elemento 3, ...]”. Potete prendere quella fatta in classe questa mattina
@@ -7,7 +6,7 @@ Console.WriteLine("Hello, World!");
 int [] arreyDiNumeri = { 9, 8, 7, 6, 5, 4};
 StampaArreyInteri(arreyDiNumeri);
 
-void StampaArreyInteri(int[] arrayInteri)
+void StampaArreyInteri (int[] arrayInteri)
 {
     for (int i = 0; i< arrayInteri.Length; i++)
     {
@@ -24,7 +23,18 @@ void StampaArreyInteri(int[] arrayInteri)
             Console.Write(arrayInteri[i] + "]");
         }
 
-
-
     }
+}
+Console.WriteLine();
+Console.WriteLine();
+
+//int Quadrato(int numero): che vi restituisca il quadrato del numero passato come parametro.
+
+Quadrato(10);
+Console.WriteLine(Quadrato(10));
+
+int Quadrato (int numero)
+{
+    int n = (numero * numero);
+    return n;
 }
